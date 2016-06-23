@@ -3,6 +3,11 @@
 # This scripts scans for the external HDD and when added, copies the movies from
 # local drive to the external HDD
 
+# Call this script from cron. Below is the cron for everyminute
+# * * * * * <script_file> >> <log_file>
+
+# TODO - make the script to run only once after the HDD is connected.
+
 from subprocess import Popen, PIPE
 import shutil as copyUtil
 
